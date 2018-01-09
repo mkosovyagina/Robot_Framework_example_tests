@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180109 14:47:54.019" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="D:\AQA\RobotFramework\HelloWorld\HelloWorld.txt" id="s1" name="HelloWorld">
+<test id="s1-t1" name="Demo">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello World</arg>
+</arguments>
+<msg timestamp="20180109 14:47:54.325" level="INFO">Hello World</msg>
+<status status="PASS" endtime="20180109 14:47:54.325" starttime="20180109 14:47:54.324"></status>
+</kw>
+<status status="PASS" endtime="20180109 14:47:54.325" critical="yes" starttime="20180109 14:47:54.323"></status>
+</test>
+<test id="s1-t2" name="Demo2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>HELLO WORLD</arg>
+</arguments>
+<msg timestamp="20180109 14:47:54.328" level="INFO">HELLO WORLD</msg>
+<status status="PASS" endtime="20180109 14:47:54.328" starttime="20180109 14:47:54.327"></status>
+</kw>
+<status status="PASS" endtime="20180109 14:47:54.328" critical="yes" starttime="20180109 14:47:54.327"></status>
+</test>
+<status status="PASS" endtime="20180109 14:47:54.329" starttime="20180109 14:47:54.025"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="HelloWorld" pass="2">HelloWorld</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,5 @@
+*** Test Cases ***
+Demo
+	Log	Hello World
+Demo2
+	Log	HELLO WORLD	
