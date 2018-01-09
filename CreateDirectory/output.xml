@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180109 17:07:46.571" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="D:\AQA\RobotFramework\CreateDirectory\CreateDir.txt" id="s1" name="CreateDir">
+<test id="s1-t1" name="TestCrDIR">
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>test_dir</arg>
+</arguments>
+<msg timestamp="20180109 17:07:46.744" html="yes" level="INFO">Created directory '&lt;a href="file://D:\AQA\RobotFramework\CreateDirectory\test_dir"&gt;D:\AQA\RobotFramework\CreateDirectory\test_dir&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180109 17:07:46.745" starttime="20180109 17:07:46.743"></status>
+</kw>
+<status status="PASS" endtime="20180109 17:07:46.746" critical="yes" starttime="20180109 17:07:46.742"></status>
+</test>
+<status status="PASS" endtime="20180109 17:07:46.749" starttime="20180109 17:07:46.627"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="CreateDir" pass="1">CreateDir</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

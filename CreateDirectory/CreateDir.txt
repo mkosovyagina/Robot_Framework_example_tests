@@ -1,0 +1,5 @@
+﻿*** Settings ***
+Library	OperatingSystem
+*** Test Cases ***
+TestCrDIR 
+	Create Directory	test_dir
