@@ -1,0 +1,11 @@
+*** Settings ***
+Library	Selenium2Library
+Test Teardown	Close Browser
+
+*** Test Cases ***
+Open Google Chrome
+	Open Browser	http://www.google.com	chrome
+Open Internet Explorer
+	Open Browser	http://www.google.com	ie
+Open Firefox
+	Open Browser	http://www.google.com	firefox

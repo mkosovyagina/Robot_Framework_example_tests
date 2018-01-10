@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180110 17:11:46.097" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="D:\AQA\RobotFramework\Selenium2Library\Open_browsers\Open_browsers.txt" id="s1" name="Open browsers">
+<test id="s1-t1" name="Open Google Chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180110 17:11:46.325" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'.</msg>
+<status status="PASS" endtime="20180110 17:11:55.097" starttime="20180110 17:11:46.325"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180110 17:11:58.261" starttime="20180110 17:11:55.098"></status>
+</kw>
+<status status="PASS" endtime="20180110 17:11:58.262" critical="yes" starttime="20180110 17:11:46.324"></status>
+</test>
+<test id="s1-t2" name="Open Internet Explorer">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.google.com</arg>
+<arg>ie</arg>
+</arguments>
+<msg timestamp="20180110 17:11:58.272" level="INFO">Opening browser 'ie' to base url 'http://www.google.com'.</msg>
+<status status="PASS" endtime="20180110 17:12:03.094" starttime="20180110 17:11:58.272"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180110 17:12:06.108" starttime="20180110 17:12:03.095"></status>
+</kw>
+<status status="PASS" endtime="20180110 17:12:06.109" critical="yes" starttime="20180110 17:11:58.269"></status>
+</test>
+<test id="s1-t3" name="Open Firefox">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.google.com</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20180110 17:12:06.118" level="INFO">Opening browser 'firefox' to base url 'http://www.google.com'.</msg>
+<status status="PASS" endtime="20180110 17:12:17.155" starttime="20180110 17:12:06.117"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180110 17:12:17.543" starttime="20180110 17:12:17.156"></status>
+</kw>
+<status status="PASS" endtime="20180110 17:12:17.543" critical="yes" starttime="20180110 17:12:06.115"></status>
+</test>
+<status status="PASS" endtime="20180110 17:12:17.546" starttime="20180110 17:11:46.101"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Open browsers" pass="3">Open browsers</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
