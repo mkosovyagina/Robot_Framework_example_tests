@@ -8,3 +8,5 @@
 7.	Вывести в лог сообщение  «Files have been successfully created»
 
 Ожидаемый результат: в папке test созданы папка new и файл mytest.txt. В папке new лежит копия файла mytest.txt. В директории с файлом автотеста Robot Framework сгенерировал файлы report.html, log.html, output.xml
+
+Задание 1б. Оформить данный test suite в виде таблицы html. Ожидаемый результат идентичен результату из задания 1. Test suite для Robot Framework, оформленный в html-таблице, имеет более наглядный вид, однако, работать с ним неудобнее.
