@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180114 20:11:06.725" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="D:\AQA\RobotFramework\Test_task\Task1b\Task_1b.html" id="s1" name="Task 1b">
+<kw type="setup" name="New Folder">
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.797" html="yes" level="INFO">Created directory '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180114 20:11:06.797" starttime="20180114 20:11:06.796"></status>
+</kw>
+<status status="PASS" endtime="20180114 20:11:06.797" starttime="20180114 20:11:06.795"></status>
+</kw>
+<test id="s1-t1" name="Create new directory and text files">
+<kw type="setup" name="Directory Should Exist" library="OperatingSystem">
+<doc>Fails unless the given path points to an existing directory.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.799" html="yes" level="INFO">Directory '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20180114 20:11:06.799" starttime="20180114 20:11:06.798"></status>
+</kw>
+<kw name="Directory Should Be Empty" library="OperatingSystem">
+<doc>Fails unless the specified directory is empty.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.800" html="yes" level="INFO">Listing contents of directory '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test&lt;/a&gt;'.</msg>
+<msg timestamp="20180114 20:11:06.800" html="yes" level="INFO">Directory '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test&lt;/a&gt;' is empty.</msg>
+<status status="PASS" endtime="20180114 20:11:06.801" starttime="20180114 20:11:06.800"></status>
+</kw>
+<kw name="New Folder">
+<arguments>
+<arg>${path}/new</arg>
+</arguments>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.877" html="yes" level="INFO">Created directory '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test\new"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test\new&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180114 20:11:06.877" starttime="20180114 20:11:06.802"></status>
+</kw>
+<status status="PASS" endtime="20180114 20:11:06.877" starttime="20180114 20:11:06.801"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${dir}/test/mytest.txt</arg>
+<arg>Hello, World!</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.880" html="yes" level="INFO">Created file '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test\mytest.txt"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test\mytest.txt&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180114 20:11:06.880" starttime="20180114 20:11:06.878"></status>
+</kw>
+<kw name="Copy File" library="OperatingSystem">
+<doc>Copies the source file into the destination.</doc>
+<arguments>
+<arg>${dir}/test/mytest.txt</arg>
+<arg>${path}/new</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.887" html="yes" level="INFO">Copied file from '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test\mytest.txt"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test\mytest.txt&lt;/a&gt;' to '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test\new\mytest.txt"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test\new\mytest.txt&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180114 20:11:06.887" starttime="20180114 20:11:06.881"></status>
+</kw>
+<kw name="File Should Exist" library="OperatingSystem">
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<arguments>
+<arg>${path}/mytest.txt</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.889" html="yes" level="INFO">File '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test\mytest.txt"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test\mytest.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20180114 20:11:06.889" starttime="20180114 20:11:06.888"></status>
+</kw>
+<kw name="File Should Exist" library="OperatingSystem">
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<arguments>
+<arg>${path}/new/mytest.txt</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.890" html="yes" level="INFO">File '&lt;a href="file://D:\AQA\RobotFramework\Test_task\Task1b\test\new\mytest.txt"&gt;D:\AQA\RobotFramework\Test_task\Task1b\test\new\mytest.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20180114 20:11:06.890" starttime="20180114 20:11:06.889"></status>
+</kw>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test suite has passed</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.891" level="INFO">Test suite has passed</msg>
+<status status="PASS" endtime="20180114 20:11:06.891" starttime="20180114 20:11:06.891"></status>
+</kw>
+<status status="PASS" endtime="20180114 20:11:06.892" critical="yes" starttime="20180114 20:11:06.797"></status>
+</test>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Files have been successfully created</arg>
+</arguments>
+<msg timestamp="20180114 20:11:06.894" level="INFO">Files have been successfully created</msg>
+<status status="PASS" endtime="20180114 20:11:06.894" starttime="20180114 20:11:06.894"></status>
+</kw>
+<status status="PASS" endtime="20180114 20:11:06.894" starttime="20180114 20:11:06.732"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Task 1b" pass="1">Task 1b</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

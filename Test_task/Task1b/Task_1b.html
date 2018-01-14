@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<table border="1">
+	<caption>Settings</caption>
+	<tr>
+	<th>Setting</th>
+	<th>Value</th>
+	<th>Argument</th>
+	</tr>
+	<tr><td>Library</td><td>OperatingSystem</td><td></td></tr>
+	<tr><td>Suite Setup</td><td>New Folder</td><td>${path}</td></tr>
+	<tr><td>Test Setup</td><td>Directory Should Exist</td><td>${path}</td></tr>
+	<tr><td>Suite Teardown</td><td>Log</td><td>Files have been successfully created</td></tr>
+	<tr><td>Test Teardown</td><td>Log</td><td>Test suite has passed</td></tr>
+	</table>
+<br />
+	<table border="1">
+	<caption>Variables</caption>
+	<tr>
+	<th>Variable</th>
+	<th>Value</th>
+	</tr>
+	<tr><td>${dir}</td><td>${CURDIR}</td></tr>
+	<tr><td>${path}</td><td>${dir}/test</td></tr>
+	</table>
+<br />
+	<table border="1">
+	<caption>Keywords</caption>
+	<tr>
+	<th>Keyword</th>
+	<th>Action</th>
+	<th>Argument</th>
+	</tr>
+	<tr><td>New Folder</td><td>[Arguments]</td><td>${path}</td></tr>
+	<tr><td></td><td>Create Directory</td><td>${path}</td></tr>
+	</table>
+<br />
+	<table border="1">
+	<caption>Test Cases</caption>
+	<tr>
+	<th>Test Case</th>
+	<th>Action</th>
+	<th>Argument</th>
+	<th>Argument</th>
+	</tr>
+	<tr><td>Create new directory and text files</td><td>Directory Should Be Empty</td><td>${path}</td><td></td></tr>
+	<tr><td></td><td>New Folder</td><td>${path}/new</td><td></td></tr>
+	<tr><td></td><td>Create File</td><td>${dir}/test/mytest.txt</td><td>Hello, World!</td></tr>
+	<tr><td></td><td>Copy File</td><td>${dir}/test/mytest.txt</td><td>${path}/new</td></tr>
+	<tr><td></td><td>File Should Exist</td><td>${path}/mytest.txt</td><td></td></tr>
+	<tr><td></td><td>File Should Exist</td><td>${path}/new/mytest.txt</td><td></td></tr>
+	</table>
+</body>
+</html>
