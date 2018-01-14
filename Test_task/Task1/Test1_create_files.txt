@@ -1,0 +1,24 @@
+*** Settings ***
+Library	OperatingSystem
+Suite Setup	New Folder	${path}
+Test Setup	Directory Should Exist	${path}
+Suite Teardown		Log		Files have been successfully created
+Test Teardown	Log		Test suite has passed
+
+*** Variables ***
+${dir}	D:/AQA/RobotFramework/Test_task/Task1
+${path}	${dir}/test
+
+*** Keywords ***
+New Folder	[Arguments]	${path}
+	Create Directory	${path}
+	
+	
+*** Test Cases ***
+Create new directory and text files
+	Directory Should Be Empty	${path}
+	New Folder	${path}/new
+	Create File		${dir}/test/mytest.txt		Hello, World!
+	Copy File	${path}/mytest.txt		${path}/new		
+	File Should Exist	${path}/mytest.txt
+	File Should Exist	${path}/new/mytest.txt
