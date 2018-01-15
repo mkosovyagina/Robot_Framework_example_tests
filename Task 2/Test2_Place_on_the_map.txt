@@ -1,0 +1,38 @@
+*** Settings ***
+Library		Selenium2Library
+Suite Setup		Set Selenium Speed		1 second
+Suite Teardown	Close All Browsers
+Test Teardown	Capture Page Screenshot		Result.png
+
+*** Variables ***
+${browser}
+${url}	 http://www.yandex.ru
+${coordinates}	-27.154740, -109.432410
+${index}	
+*** Keywords ***
+Choose Browser		[Arguments]		${browser}
+	Open Browser	${url}		${browser}
+	Maximize Browser Window
+Input Coordinates
+	Input Text		class:input_air-search-large__control		${coordinates}
+	Click Button	xpath://button[@type='submit']
+	Set Selenium Timeout	10 seconds
+Make Sure This Is Easter Island
+	Page Should Contain		остров Пасхи
+	Page Should Contain		Токопилья, Чили
+	Page Should Contain		${coordinates}
+Save Screenshot
+	Capture Page Screenshot		Step_{index}.png
+
+*** Test cases ***
+Go to the place on the map by coordinates in Firefox
+	Choose Browser	firefox
+	Save Screenshot
+	Click Link	Карты
+	Set Selenium Timeout	5 seconds
+	Save Screenshot
+	Input Coordinates
+	Set Selenium Timeout	5 seconds
+	Save Screenshot
+	Make Sure This Is Easter Island
+	

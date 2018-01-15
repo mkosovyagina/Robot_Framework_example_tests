@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180115 17:04:24.028" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="D:\AQA\RobotFramework\Test_task\Task 2\Test2_place_on_the_map.txt" id="s1" name="Test2 place on the map">
+<kw type="setup" name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1 second</arg>
+</arguments>
+<status status="PASS" endtime="20180115 17:04:24.418" starttime="20180115 17:04:24.417"></status>
+</kw>
+<test id="s1-t1" name="Go to the place on the map by coordinates in Firefox">
+<kw name="Choose Browser">
+<arguments>
+<arg>firefox</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20180115 17:04:24.422" level="INFO">Opening browser 'firefox' to base url 'http://www.yandex.ru'.</msg>
+<status status="PASS" endtime="20180115 17:04:37.363" starttime="20180115 17:04:24.421"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180115 17:04:38.449" starttime="20180115 17:04:37.363"></status>
+</kw>
+<status status="PASS" endtime="20180115 17:04:38.449" starttime="20180115 17:04:24.420"></status>
+</kw>
+<kw name="Save Screenshot">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>Step_{index}.png</arg>
+</arguments>
+<msg timestamp="20180115 17:04:39.705" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Step_1.png"&gt;&lt;img src="Step_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180115 17:04:39.706" starttime="20180115 17:04:38.454"></status>
+</kw>
+<status status="PASS" endtime="20180115 17:04:39.706" starttime="20180115 17:04:38.453"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Карты</arg>
+</arguments>
+<msg timestamp="20180115 17:04:39.708" level="INFO">Clicking link 'Карты'.</msg>
+<status status="PASS" endtime="20180115 17:04:45.792" starttime="20180115 17:04:39.707"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20180115 17:04:46.805" starttime="20180115 17:04:45.793"></status>
+</kw>
+<kw name="Save Screenshot">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>Step_{index}.png</arg>
+</arguments>
+<msg timestamp="20180115 17:04:48.765" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Step_2.png"&gt;&lt;img src="Step_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180115 17:04:48.765" starttime="20180115 17:04:46.807"></status>
+</kw>
+<status status="PASS" endtime="20180115 17:04:48.766" starttime="20180115 17:04:46.807"></status>
+</kw>
+<kw name="Input Coordinates">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>class:input_air-search-large__control</arg>
+<arg>${coordinates}</arg>
+</arguments>
+<msg timestamp="20180115 17:04:48.767" level="INFO">Typing text '-27.154740, -109.432410' into text field 'class:input_air-search-large__control'.</msg>
+<status status="PASS" endtime="20180115 17:04:52.332" starttime="20180115 17:04:48.767"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://button[@type='submit']</arg>
+</arguments>
+<msg timestamp="20180115 17:04:52.333" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" endtime="20180115 17:04:58.023" starttime="20180115 17:04:52.332"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20180115 17:04:59.036" starttime="20180115 17:04:58.024"></status>
+</kw>
+<status status="PASS" endtime="20180115 17:04:59.037" starttime="20180115 17:04:48.766"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20180115 17:05:00.053" starttime="20180115 17:04:59.042"></status>
+</kw>
+<kw name="Save Screenshot">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>Step_{index}.png</arg>
+</arguments>
+<msg timestamp="20180115 17:05:01.328" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Step_3.png"&gt;&lt;img src="Step_3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180115 17:05:01.328" starttime="20180115 17:05:00.056"></status>
+</kw>
+<status status="PASS" endtime="20180115 17:05:01.328" starttime="20180115 17:05:00.054"></status>
+</kw>
+<kw name="Make Sure This Is Easter Island">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>остров Пасхи</arg>
+</arguments>
+<msg timestamp="20180115 17:05:03.367" level="INFO">Current page contains text 'остров Пасхи'.</msg>
+<status status="PASS" endtime="20180115 17:05:03.367" starttime="20180115 17:05:01.330"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Токопилья, Чили</arg>
+</arguments>
+<msg timestamp="20180115 17:05:05.403" level="INFO">Current page contains text 'Токопилья, Чили'.</msg>
+<status status="PASS" endtime="20180115 17:05:05.403" starttime="20180115 17:05:03.368"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${coordinates}</arg>
+</arguments>
+<msg timestamp="20180115 17:05:07.436" level="INFO">Current page contains text '-27.154740, -109.432410'.</msg>
+<status status="PASS" endtime="20180115 17:05:07.436" starttime="20180115 17:05:05.403"></status>
+</kw>
+<status status="PASS" endtime="20180115 17:05:07.437" starttime="20180115 17:05:01.329"></status>
+</kw>
+<kw type="teardown" name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>Result.png</arg>
+</arguments>
+<msg timestamp="20180115 17:05:08.669" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Result.png"&gt;&lt;img src="Result.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180115 17:05:08.670" starttime="20180115 17:05:07.438"></status>
+</kw>
+<status status="PASS" endtime="20180115 17:05:08.670" critical="yes" starttime="20180115 17:04:24.419"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180115 17:05:10.700" starttime="20180115 17:05:08.674"></status>
+</kw>
+<status status="PASS" endtime="20180115 17:05:10.700" starttime="20180115 17:04:24.048"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test2 place on the map" pass="1">Test2 place on the map</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
